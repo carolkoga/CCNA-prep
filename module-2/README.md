@@ -1,3 +1,4 @@
+
 # 🌐 CCNA Module 2: Switching, Routing, and Wireless Essentials (SRWE)
 
 Welcome to the **CCNA Module 2 (SRWE)** study guide and lab reference! This repository covers intermediate network operations including VLAN segmentation, Spanning Tree Protocol (STP), EtherChannel link aggregation, Inter-VLAN routing, and Wireless LAN (WLAN) fundamentals for the Cisco CCNA (200-301) exam.
