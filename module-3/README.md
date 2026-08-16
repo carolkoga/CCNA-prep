@@ -1,6 +1,4 @@
 
----
-
 # 🌐 CCNA Module 3: Enterprise Networking, Security, and Automation (ENSA)
 
 Welcome to the **CCNA Module 3 (ENSA)** study guide and lab reference! This repository covers large-scale enterprise network concepts, single-area OSPFv2, WAN technologies, Network Security (ACLs, NAT), Network Management (NTP, SNMP, Syslog), and Software-Defined Networking / Automation for the Cisco CCNA (200-301) exam.
