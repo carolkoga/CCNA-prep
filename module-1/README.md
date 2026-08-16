@@ -40,9 +40,6 @@ service password-encryption
 ! Configure a Message of the Day (MOTD) banner
 banner motd # Unauthorized Access is Strictly Prohibited! #
 
-```
-```
-
 ---
 
 ## 2. Remote Access Configuration (SSH)
