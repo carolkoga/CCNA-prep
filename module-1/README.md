@@ -1,4 +1,4 @@
-```markdown
+
 # 🌐 CCNA Module 1: Introduction to Networks (ITN)
 
 Welcome to the **CCNA Module 1 (ITN)** study guide and lab reference! This repository contains a curated collection of foundational Cisco IOS commands, syntax examples, and lab verification procedures essential for passing the Cisco CCNA (200-301) exam.
@@ -6,10 +6,11 @@ Welcome to the **CCNA Module 1 (ITN)** study guide and lab reference! This repos
 ---
 
 ## 📌 Table of Contents
-- [1. Initial Access & Basic Device Configuration](#1-initial-access--basic-device-configuration)
-- [2. Remote Access Configuration (SSH)](#2-remote-access-configuration-ssh)
-- [3. IP Addressing & SVI Configuration](#3-ip-addressing--svi-configuration)
-- [4. Verification, Diagnostics & Memory Management](#4-verification-diagnostics--memory-management)
+
+* [1. Initial Access & Basic Device Configuration](https://www.google.com/search?q=%231-initial-access--basic-device-configuration)
+* [2. Remote Access Configuration (SSH)](https://www.google.com/search?q=%232-remote-access-configuration-ssh)
+* [3. IP Addressing & SVI Configuration](https://www.google.com/search?q=%233-ip-addressing--svi-configuration)
+* [4. Verification, Diagnostics & Memory Management](https://www.google.com/search?q=%234-verification-diagnostics--memory-management)
 
 ---
 
@@ -39,6 +40,8 @@ service password-encryption
 
 ! Configure a Message of the Day (MOTD) banner
 banner motd # Unauthorized Access is Strictly Prohibited! #
+
+```
 
 ---
 
@@ -146,7 +149,3 @@ traceroute 192.168.1.1
 ## 📂 Related Labs
 
 Check out the Packet Tracer `.pkt` files inside the [`/labs`](https://www.google.com/search?q=./labs) directory to test these configurations interactively!
-
-```
-
-```
