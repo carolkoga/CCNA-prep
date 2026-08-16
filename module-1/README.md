@@ -149,4 +149,4 @@ traceroute 192.168.1.1
 
 ## 📂 Related Labs
 
-Check out the Packet Tracer `.pkt` files inside the [`/labs`](https://www.google.com/search?q=./labs) directory to test these configurations interactively!
+Check out the Packet Tracer `.pkt` files inside the [`/labs`](https://github.com/carolkoga/CCNA-prep/blob/main/module-1/lab_module1) directory to test these configurations interactively!
