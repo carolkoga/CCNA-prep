@@ -1,5 +1,3 @@
-Here is the complete Markdown file. You can click the copy button in the top-right corner of the code block below and paste it directly into your `README.md` file.
-
 ```markdown
 # 🌐 CCNA Module 1: Introduction to Networks (ITN)
 
