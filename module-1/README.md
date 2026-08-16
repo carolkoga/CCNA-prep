@@ -1,5 +1,5 @@
 ```markdown
-# 🌐 CCNA Module 1: Introduction to Networks (ITN)
+## 🌐 CCNA Module 1: Introduction to Networks (ITN)
 
 Welcome to the **CCNA Module 1 (ITN)** study guide and lab reference! This repository contains a curated collection of foundational Cisco IOS commands, syntax examples, and lab verification procedures essential for passing the Cisco CCNA (200-301) exam.
 
