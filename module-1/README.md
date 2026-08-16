@@ -7,10 +7,13 @@ Welcome to the **CCNA Module 1 (ITN)** study guide and lab reference! This repos
 
 ## 📌 Table of Contents
 
-* [1. Initial Access & Basic Device Configuration](https://www.google.com/search?q=%231-initial-access--basic-device-configuration)
-* [2. Remote Access Configuration (SSH)](https://www.google.com/search?q=%232-remote-access-configuration-ssh)
-* [3. IP Addressing & SVI Configuration](https://www.google.com/search?q=%233-ip-addressing--svi-configuration)
-* [4. Verification, Diagnostics & Memory Management](https://www.google.com/search?q=%234-verification-diagnostics--memory-management)
+## 📌 Table of Contents
+
+- [1. Initial Access & Basic Device Configuration](#1-initial-access--basic-device-configuration)
+- [2. Remote Access Configuration (SSH)](#2-remote-access-configuration-ssh)
+- [3. IP Addressing & SVI Configuration](#3-ip-addressing--svi-configuration)
+- [4. Verification, Diagnostics & Memory Management](#4-verification-diagnostics--memory-management)
+- [5. IP Addressing & Subnetting Reference (Cheatsheet)](https://github.com/carolkoga/CCNA-prep/blob/main/module-1/ip_address_subnet.md)
 
 ---
 
