@@ -1,5 +1,5 @@
 ```markdown
-## 🌐 CCNA Module 1: Introduction to Networks (ITN)
+# 🌐 CCNA Module 1: Introduction to Networks (ITN)
 
 Welcome to the **CCNA Module 1 (ITN)** study guide and lab reference! This repository contains a curated collection of foundational Cisco IOS commands, syntax examples, and lab verification procedures essential for passing the Cisco CCNA (200-301) exam.
 
@@ -150,10 +150,5 @@ traceroute 192.168.1.1
 Check out the Packet Tracer `.pkt` files inside the [`/labs`](https://www.google.com/search?q=./labs) directory to test these configurations interactively!
 
 ```
-
-<ElicitationsGroup message="What would you like to set up next for your repo?">
-  <Elicitation label="Create a main root README.md with course progress trackers" query="Generate a main README.md for the root directory of the repository with progress checkboxes, module index, and badges."/>
-  <Elicitation label="Generate a .gitignore file for Packet Tracer and Cisco files" query="Give me a standard .gitignore file template customized for Cisco Packet Tracer and Cisco lab files."/>
-</ElicitationsGroup>
 
 ```
