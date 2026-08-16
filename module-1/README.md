@@ -7,8 +7,6 @@ Welcome to the **CCNA Module 1 (ITN)** study guide and lab reference! This repos
 
 ## 📌 Table of Contents
 
-## 📌 Table of Contents
-
 - [1. Initial Access & Basic Device Configuration](#1-initial-access--basic-device-configuration)
 - [2. Remote Access Configuration (SSH)](#2-remote-access-configuration-ssh)
 - [3. IP Addressing & SVI Configuration](#3-ip-addressing--svi-configuration)
