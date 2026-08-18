@@ -1,0 +1,92 @@
+## The Binary Logic Behind IPv4 Classes & RFC 1918 Private Ranges
+
+Most CCNA study guides tell you to memorize IPv4 class ranges (`1-127`, `128-191`, `192-223`). However, these boundaries were not chosen arbitrarily—they are rooted in **pure binary logic**.
+
+---
+
+## 1. Why Do Class Ranges Exist? (Leading Bits)
+
+In early networking, routers needed a way to inspect an IP packet and immediately determine the network mask without transmitting extra subnet mask bits over the wire. 
+
+Engineers introduced **Leading Bits** at the start of the first octet:
+
+* **Class A:** Starts with `0.......`
+* **Class B:** Starts with `10......`
+* **Class C:** Starts with `110.....`
+* **Class D (Multicast):** Starts with `1110....`
+* **Class E (Experimental):** Starts with `1111....`
+
+### The Binary Math:
+
+#### Class A (`0.......`)
+* Min: `00000000` = `0`
+* Max: `01111111` = `127`
+* **Range:** `0.0.0.0` to `127.255.255.255`
+
+#### Class B (`10......`)
+* Min: `10000000` = `128`
+* Max: `10111111` = `191`
+* **Range:** `128.0.0.0` to `191.255.255.255`
+
+#### Class C (`110.....`)
+* Min: `11000000` = `192`
+* Max: `11011111` = `223`
+* **Range:** `192.0.0.0` to `223.255.255.255`
+
+---
+
+## 2. The Logic Behind RFC 1918 Private IP Ranges
+
+When **RFC 1918** was defined in 1996 to reserve non-routable IP addresses, engineers reserved clean binary blocks from each class:
+
+### 10.0.0.0 /8 (Class A)
+* Took **1 whole Class A block** (the 10th network).
+* Provides 16.7 million addresses (`2^24`).
+
+### 172.16.0.0 /12 (Class B)
+* Took **16 contiguous Class B networks** (`172.16.0.0` to `172.31.255.255`).
+* Look at the second octet in binary:
+  * `16` = `00010000`
+  * `31` = `00011111`
+* The first 4 bits (`0001`) remain fixed, creating a clean `/12` summary mask!
+
+### 192.168.0.0 /16 (Class C)
+* Took **256 contiguous Class C networks** starting at `192.168.0.0`.
+* Provides 256 subnets of 254 hosts each (`192.168.0.x` through `192.168.255.x`).
+
+---
+
+## 📌 Summary Table
+
+| Category | Binary Leading Bits | Decimal Range |
+| :--- | :--- | :--- |
+| **Class A** | `0.......` | `0 – 127` |
+| **Class B** | `10......` | `128 – 191` |
+| **Class C** | `110.....` | `192 – 223` |
+| **Private A** | Network `10` | `10.0.0.0/8` |
+| **Private B** | Second octet `00010000` to `00011111` | `172.16.0.0/12` |
+| **Private C** | 256 Class C networks | `192.168.0.0/16` |
+
+---
+
+When I started studying networking, I thought `1-127`, `128-191`, and `192-223` were just random numbers to memorize. But there is a pure binary logic behind them!
+
+Back in the day, routers needed to know a network's size instantly without receiving a subnet mask over the wire. Engineers invented **Leading Bits** in the first octet:
+
+🔹 **Class A (`0.......`)** ➡️ `00000000` to `01111111` = **0 to 127**
+
+🔹 **Class B (`10......`)** ➡️ `10000000` to `10111111` = **128 to 191**
+
+🔹 **Class C (`110.....`)** ➡️ `11000000` to `11011111` = **192 to 223**
+
+The same logic applies to RFC 1918 Private IPs!
+
+Take `172.16.0.0` to `172.31.255.255` (Class B Private):
+
+* `16` in binary = `00010000`
+* `31` in binary = `00011111`
+* Notice how the first 4 bits (`0001`) never change? That’s why it forms a clean **/12** prefix!
+
+Understanding *why* protocols work this way makes studying for the CCNA much easier than trying to memorize raw numbers.
+
+#CCNA #Cisco #Networking #Cybersecurity #LearningInPublic #Subnetting #IPv4 #TechCommunity
