@@ -69,12 +69,6 @@ When **RFC 1918** was defined in 1996 to reserve non-routable IP addresses, engi
 
 ```
 
----
-
-**LinkedIn Post**
-
-Stop trying to memorize IPv4 class ranges for the CCNA exam! 
-
 When I started studying networking, I thought `1-127`, `128-191`, and `192-223` were just random numbers to memorize. But there is a pure binary logic behind them!
 
 Back in the day, routers needed to know a network's size instantly without receiving a subnet mask over the wire. Engineers invented **Leading Bits** in the first octet:
