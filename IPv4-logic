@@ -1,4 +1,4 @@
-# The Binary Logic Behind IPv4 Classes & RFC 1918 Private Ranges
+# 💡 The Binary Logic Behind IPv4 Classes & RFC 1918 Private Ranges
 
 Most CCNA study guides tell you to memorize IPv4 class ranges (`1-127`, `128-191`, `192-223`). However, these boundaries were not chosen arbitrarily—they are rooted in **pure binary logic**.
 
@@ -66,33 +66,3 @@ When **RFC 1918** was defined in 1996 to reserve non-routable IP addresses, engi
 | **Private A** | Network `10` | `10.0.0.0/8` |
 | **Private B** | Second octet `00010000` to `00011111` | `172.16.0.0/12` |
 | **Private C** | 256 Class C networks | `192.168.0.0/16` |
-
-```
-
----
-
-**LinkedIn Post**
-
-Stop trying to memorize IPv4 class ranges for the CCNA exam! 
-
-When I started studying networking, I thought `1-127`, `128-191`, and `192-223` were just random numbers to memorize. But there is a pure binary logic behind them!
-
-Back in the day, routers needed to know a network's size instantly without receiving a subnet mask over the wire. Engineers invented **Leading Bits** in the first octet:
-
-🔹 **Class A (`0.......`)** ➡️ `00000000` to `01111111` = **0 to 127**
-
-🔹 **Class B (`10......`)** ➡️ `10000000` to `10111111` = **128 to 191**
-
-🔹 **Class C (`110.....`)** ➡️ `11000000` to `11011111` = **192 to 223**
-
-The same logic applies to RFC 1918 Private IPs!
-
-Take `172.16.0.0` to `172.31.255.255` (Class B Private):
-
-* `16` in binary = `00010000`
-* `31` in binary = `00011111`
-* Notice how the first 4 bits (`0001`) never change? That’s why it forms a clean **/12** prefix!
-
-Understanding *why* protocols work this way makes studying for the CCNA much easier than trying to memorize raw numbers.
-
-#CCNA #Cisco #Networking #Cybersecurity #LearningInPublic #Subnetting #IPv4 #TechCommunity
