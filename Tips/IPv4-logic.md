@@ -67,7 +67,7 @@ When **RFC 1918** was defined in 1996 to reserve non-routable IP addresses, engi
 | **Private B** | Second octet `00010000` to `00011111` | `172.16.0.0/12` |
 | **Private C** | 256 Class C networks | `192.168.0.0/16` |
 
-```
+---
 
 When I started studying networking, I thought `1-127`, `128-191`, and `192-223` were just random numbers to memorize. But there is a pure binary logic behind them!
 
