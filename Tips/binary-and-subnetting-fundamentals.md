@@ -114,7 +114,56 @@ $$\text{Usable Hosts} = 2^h - 2$$
 
 
 *(We subtract 2 because the **Network ID** [all 0s in host bits] and the **Broadcast Address** [all 1s in host bits] cannot be assigned to end devices).*
-3. **Block Size (Magic Number):**
+
+3. **Block Size (The "Magic Number" Method)**
+
+The **Block Size** represents the total number of IP addresses contained in a subnet. It determines the "increment step" between consecutive subnets without requiring full binary conversion.
 
 $$\text{Block Size} = 256 - \text{Interesting Octet Subnet Mask}$$
+
+#### Why do we use 256 in the formula?
+An 8-bit octet has **256 total possible value combinations** ($2^8 = 256$), ranging from `0` to `255`. Since the subnet mask consumes a portion of those bits starting from the left, subtracting the mask value from `256` reveals the exact number of remaining host address combinations in that octet block.
+
+---
+
+#### Examples
+
+**Example 1: `/26` Subnet Mask (`255.255.255.192`)**
+1. **Find the Interesting Octet:** The 4th octet (`192`).
+2. **Calculate Block Size:** $256 - 192 = \mathbf{64}$.
+3. **Determine Subnet Boundaries (Counting by 64 in the 4th octet):**
+   * Subnet 1: `192.168.1.0` to `192.168.1.63`
+   * Subnet 2: `192.168.1.64` to `192.168.1.127`
+   * Subnet 3: `192.168.1.128` to `192.168.1.191`
+   * Subnet 4: `192.168.1.192` to `192.168.1.255`
+
+> **Host Lookup Example:** For IP `192.168.1.50 /26`, since `.50` falls between `.0` and `.63`, it belongs to **Subnet 1**:
+> * **Network ID:** `192.168.1.0`
+> * **Usable Range:** `192.168.1.1` – `192.168.1.62`
+> * **Broadcast:** `192.168.1.63`
+
+---
+
+**Example 2: `/20` Subnet Mask (`255.255.240.0`)**
+1. **Find the Interesting Octet:** The 3rd octet (`240`).
+2. **Calculate Block Size:** $256 - 240 = \mathbf{16}$.
+3. **Determine Subnet Boundaries (Counting by 16 in the 3rd octet):**
+   * Subnet 1: `10.5.0.0` to `10.5.15.255`
+   * Subnet 2: `10.5.16.0` to `10.5.31.255`
+   * Subnet 3: `10.5.32.0` to `10.5.47.255`
+
+> **Host Lookup Example:** For IP `10.5.20.100 /20`, since the 3rd octet value `20` falls between `16` and `31`, it belongs to **Subnet 2**:
+> * **Network ID:** `10.5.16.0`
+> * **Usable Range:** `10.5.16.1` – `10.5.31.254`
+> * **Broadcast:** `10.5.31.255`
+
+---
+
+## IPv4 Fast Facts & Exam Trivia
+
+* **The Max Value of 255:** The sum of all 8 bits in an octet ($128 + 64 + 32 + 16 + 8 + 4 + 2 + 1$) equals **255**. This is why no IPv4 octet can exceed 255.
+* **The Sacrificed `127.0.0.0/8` Class:** The entire `127.0.0.0/8` block (16.7 million addresses) is reserved exclusively for internal loopback testing (e.g., `127.0.0.1`).
+* **APIPA Addresses (`169.254.x.x`):** If a host gets a `169.254.x.x` address, it indicates that it failed to reach a DHCP server and self-assigned an **Automatic Private IP Address**.
+* **Point-to-Point Links (`/30` vs `/31`):** Traditionally, point-to-point router links use `/30` (4 total IPs, 2 usable). However, **RFC 3021** permits `/31` masks on point-to-point links to eliminate address waste by treating Network ID and Broadcast as valid end IPs.
+* **Total Global IPv4 Pool:** $2^{32} = \mathbf{4,294,967,296}$ total IPv4 addresses. Exhaustion of this pool led to widespread deployment of NAT and the transition to IPv6 ($2^{128}$).
 
