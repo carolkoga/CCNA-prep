@@ -8,7 +8,7 @@
 
 Convert the following 8-bit binary octet into its decimal equivalent: **`10110010`**.
 
-**[Jump to Answer & Explanation](https://www.google.com/search?q=%23solution-1)**
+**[Jump to Answer & Explanation](Solution-for-Question-1)**
 
 ---
 
