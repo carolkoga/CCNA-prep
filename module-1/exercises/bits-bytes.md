@@ -8,7 +8,7 @@
 
 Convert the following 8-bit binary octet into its decimal equivalent: **`10110010`**.
 
-**[Jump to Answer & Explanation](Solution-for-Question-1)**
+**[Jump to Answer & Explanation](#-solution-for-question-1Solution-for-Question-1)**
 
 ---
 
@@ -16,7 +16,7 @@ Convert the following 8-bit binary octet into its decimal equivalent: **`1011001
 
 Convert the decimal number **`205`** into an 8-bit binary octet.
 
-**[Jump to Answer & Explanation](https://www.google.com/search?q=%23solution-2)**
+**[Jump to Answer & Explanation](#-solution-for-question-2)**
 
 ---
 
@@ -24,7 +24,7 @@ Convert the decimal number **`205`** into an 8-bit binary octet.
 
 An administrator assigns an end device the IP address **`172.16.45.100`** with a subnet mask of **`255.255.240.0`** (`/20`). What is the **Network ID** of this subnet?
 
-**[Jump to Answer & Explanation](https://www.google.com/search?q=%23solution-3)**
+**[Jump to Answer & Explanation](#-solution-for-question-3)**
 
 ---
 
@@ -35,7 +35,7 @@ A network engineer needs to subnet a Class C network using the prefix length **`
 1. How many total host bits remain?
 2. How many **usable host IP addresses** are available per subnet?
 
-**[Jump to Answer & Explanation](https://www.google.com/search?q=%23solution-4)**
+**[Jump to Answer & Explanation](#-solution-for-question-4)**
 
 ---
 
@@ -48,7 +48,7 @@ Given the host IP address **`192.168.1.138 /27`**, determine:
 3. The **Broadcast Address**.
 4. The **Usable Host Range**.
 
-**[Jump to Answer & Explanation](https://www.google.com/search?q=%23solution-5)**
+**[Jump to Answer & Explanation](#-solution-for-question-5)**
 
 ---
 
@@ -56,7 +56,7 @@ Given the host IP address **`192.168.1.138 /27`**, determine:
 
 Convert the CIDR prefix **`/22`** into its dotted-decimal subnet mask representation.
 
-**[Jump to Answer & Explanation](https://www.google.com/search?q=%23solution-6)**
+**[Jump to Answer & Explanation](#-solution-for-question-6)**
 
 ---
 
@@ -68,7 +68,7 @@ Given the IP address **`10.20.130.45 /19`**, determine:
 2. The **Network ID**.
 3. The **Broadcast Address**.
 
-**[Jump to Answer & Explanation](https://www.google.com/search?q=%23solution-7)**
+**[Jump to Answer & Explanation](#-solution-for-question-7)**
 
 ---
 
@@ -76,7 +76,7 @@ Given the IP address **`10.20.130.45 /19`**, determine:
 
 Calculate the **Wildcard Mask** for the subnet **`172.16.64.0 /18`**.
 
-**[Jump to Answer & Explanation](https://www.google.com/search?q=%23solution-8)**
+**[Jump to Answer & Explanation](#-solution-for-question-8)**
 
 ---
 
@@ -84,7 +84,7 @@ Calculate the **Wildcard Mask** for the subnet **`172.16.64.0 /18`**.
 
 An engineer configures **Host A (`192.168.1.67 /26`)** and **Host B (`192.168.1.130 /26`)**. Can Host A communicate directly with Host B without going through a router (Layer 3 device)? Explain why or why not based on their Network IDs.
 
-**[Jump to Answer & Explanation](https://www.google.com/search?q=%23solution-9)**
+**[Jump to Answer & Explanation](#-solution-for-question-9)**
 
 ---
 
@@ -96,7 +96,7 @@ You are assigned the network **`192.168.50.0 /24`** and need to create subnets t
 2. What is the **Block Size**?
 3. What is the **Network ID** of the second subnet created?
 
-**[Jump to Answer & Explanation](https://www.google.com/search?q=%23solution-10)**
+**[Jump to Answer & Explanation](#-solution-for-question-10)**
 
 
 ---
@@ -119,7 +119,7 @@ To convert binary to decimal, align the 8 bits with their corresponding position
 
 $$\text{Calculation: } 128 + 32 + 16 + 2 = \mathbf{178}$$
 
-↩️ **[Back to Question 1](https://www.google.com/search?q=%23question-1-binary-to-decimal-conversion)** | ➡️ **[Go to Question 2](https://www.google.com/search?q=%23question-2-decimal-to-binary-conversion)**
+↩️ **[Back to Question 1](#question-1-binary-to-decimal-conversion)** | ➡️ **[Go to Question 2](#question-2-decimal-to-binary-conversion)**
 
 ---
 
@@ -142,7 +142,7 @@ Compare the decimal value `205` against the positional weights from left to righ
 
 $$\text{Binary Result: } \mathbf{11001101}$$
 
-↩️ **[Back to Question 2](https://www.google.com/search?q=%23question-2-decimal-to-binary-conversion)** | ➡️ **[Go to Question 3](https://www.google.com/search?q=%23question-3-network-id-extraction-logical-and)**
+↩️ **[Back to Question 2](#question-2-decimal-to-binary-conversion)** | ➡️ **[Go to Question 3](#question-3-network-id-extraction-logical-and)**
 
 ---
 
@@ -173,7 +173,7 @@ $$\text{Binary Result: } \mathbf{11001101}$$
 
 $$\text{Network ID: } \mathbf{172.16.32.0}$$
 
-↩️ **[Back to Question 3](https://www.google.com/search?q=%23question-3-network-id-extraction-logical-and)** | ➡️ **[Go to Question 4](https://www.google.com/search?q=%23question-4-usable-host-count-calculation)**
+↩️ **[Back to Question 3](#question-3-network-id-extraction-logical-and)** | ➡️ **[Go to Question 4](#question-4-usable-host-count-calculation)**
 
 ---
 
@@ -205,7 +205,7 @@ $$\text{Usable Hosts} = 2^h - 2 = 16 - 2 = \mathbf{14 \text{ usable host IPs}}$$
 
 *(Note: We subtract 2 to exclude the **Network ID** [all host bits set to `0`] and the **Broadcast Address** [all host bits set to `1`]).*
 
-↩️ **[Back to Question 4](https://www.google.com/search?q=%23question-4-usable-host-count-calculation)** | ➡️ **[Go to Question 5](https://www.google.com/search?q=%23question-5-finding-broadcast-address--usable-range)**
+↩️ **[Back to Question 4](#question-4-usable-host-count-calculation)** | ➡️ **[Go to Question 5](#question-5-finding-broadcast-address--usable-range)**
 
 ---
 
@@ -243,7 +243,7 @@ $$\text{Block Size} = 256 - 224 = \mathbf{32}$$
 * **Broadcast Address:** `192.168.1.159` (one value before the next subnet `.160`)
 
 
-↩️ **[Back to Question 5](https://www.google.com/search?q=%23question-5-finding-broadcast-address--usable-range)**
+↩️ **[Back to Question 5](#question-5-finding-broadcast-address--usable-range)** | ➡️ **[Go to Question 6](#question-6-cidr-prefix-to-subnet-mask-conversion)**
 
 ### 🔍 Solution for Question 6
 
@@ -262,7 +262,7 @@ $$\text{Block Size} = 256 - 224 = \mathbf{32}$$
 
 $$\text{Subnet Mask: } \mathbf{255.255.252.0}$$
 
-↩️ **[Back to Question 6](https://www.google.com/search?q=%23question-6-cidr-prefix-to-subnet-mask-conversion)** | ➡️ **[Go to Question 7](https://www.google.com/search?q=%23question-7-subnet-range-in-the-3rd-octet)**
+↩️ **[Back to Question 6](#question-6-cidr-prefix-to-subnet-mask-conversion)** | ➡️ **[Go to Question 7](#question-7-subnet-range-in-the-3rd-octet)**
 
 ---
 
@@ -298,7 +298,7 @@ $$\text{Subnet Mask: } \mathbf{255.255.252.0}$$
 
 
 
-↩️ **[Back to Question 7](https://www.google.com/search?q=%23question-7-subnet-range-in-the-3rd-octet)** | ➡️ **[Go to Question 8](https://www.google.com/search?q=%23question-8-wildcard-mask-calculation)**
+↩️ **[Back to Question 7](#question-7-subnet-range-in-the-3rd-octet)** | ➡️ **[Go to Question 8](#question-8-wildcard-mask-calculation)**
 
 ---
 
@@ -329,7 +329,7 @@ $$\text{Subnet Mask: } \mathbf{255.255.252.0}$$
 
 $$\text{Wildcard Mask: } \mathbf{0.0.63.255}$$
 
-↩️ **[Back to Question 8](https://www.google.com/search?q=%23question-8-wildcard-mask-calculation)** | ➡️ **[Go to Question 9](https://www.google.com/search?q=%23question-9-same-subnet-verification)**
+↩️ **[Back to Question 8](#question-8-wildcard-mask-calculation)** | ➡️ **[Go to Question 9](#question-9-same-subnet-verification)**
 
 ---
 
@@ -349,8 +349,6 @@ $$\text{Wildcard Mask: } \mathbf{0.0.63.255}$$
 * Subnet 3: `192.168.1.128 /26` (Range: `.128` to `.191`)
 
 
-
-
 2. **Locate Each Host:**
 * **Host A (`192.168.1.67`):** Belongs to **Subnet 2** (`192.168.1.64 /26`).
 * **Host B (`192.168.1.130`):** Belongs to **Subnet 3** (`192.168.1.128 /26`).
@@ -358,7 +356,7 @@ $$\text{Wildcard Mask: } \mathbf{0.0.63.255}$$
 
 3. **Conclusion:** Since Host A and Host B have different Network IDs, their traffic must be routed by a default gateway (router or Layer 3 switch).
 
-↩️ **[Back to Question 9](https://www.google.com/search?q=%23question-9-same-subnet-verification)** | ➡️ **[Go to Question 10](https://www.google.com/search?q=%23question-10-designing-a-subnet-for-a-specific-host-requirement)**
+↩️ **[Back to Question 9](#question-9-same-subnet-verification)** | ➡️ **[Go to Question 10](#question-10-designing-a-subnet-for-a-specific-host-requirement)**
 
 ---
 
@@ -391,4 +389,4 @@ $$\text{Wildcard Mask: } \mathbf{0.0.63.255}$$
 * 2nd Subnet: **`192.168.50.32 /27`**
 
 
-↩️ **[Back to Question 10](https://www.google.com/search?q=%23question-10-designing-a-subnet-for-a-specific-host-requirement)**
+↩️ **[Back to Question 10](#question-10-designing-a-subnet-for-a-specific-host-requirement)**
