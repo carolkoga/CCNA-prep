@@ -4,7 +4,7 @@
 
 ## Questions
 
-### 📝 Question 1: Sorting & Optimal Mask Selection
+### Question 1: Sorting & Optimal Mask Selection
 
 You are allocated the block **`192.168.10.0 /24`**. You need to design subnets for three departments:
 
@@ -15,11 +15,11 @@ You are allocated the block **`192.168.10.0 /24`**. You need to design subnets f
 1. In what order must these subnets be allocated?
 2. What CIDR prefix (`/XX`) should be assigned to each department to minimize address waste?
 
-👉 **[Jump to Solution 1](#-solution-for-question-1)**
+**[Jump to Solution 1](#-solution-for-question-1)**
 
 ---
 
-### 📝 Question 2: Simple Sequential VLSM Allocation
+### Question 2: Simple Sequential VLSM Allocation
 
 Using the base network **`10.1.1.0 /24`**, allocate subnets sequentially for the following requirements (from largest to smallest):
 
@@ -29,11 +29,11 @@ Using the base network **`10.1.1.0 /24`**, allocate subnets sequentially for the
 
 Find the **Network ID**, **Usable Host Range**, and **Broadcast Address** for each LAN.
 
-👉 **[Jump to Solution 2](#-solution-for-question-2)**
+**[Jump to Solution 2](#-solution-for-question-2)**
 
 ---
 
-### 📝 Question 3: Incorporating Point-to-Point Links (`/30`)
+### Question 3: Incorporating Point-to-Point Links (`/30`)
 
 A branch office receives the block **`172.16.5.0 /24`**. Design subnets for:
 
@@ -44,11 +44,11 @@ A branch office receives the block **`172.16.5.0 /24`**. Design subnets for:
 
 Provide the **Network ID** and **Prefix Length** for all 4 allocations.
 
-👉 **[Jump to Solution 3](#-solution-for-question-3)**
+**[Jump to Solution 3](#-solution-for-question-3)**
 
 ---
 
-### 📝 Question 4: Identifying VLSM Overlap / Conflicts
+### Question 4: Identifying VLSM Overlap / Conflicts
 
 An administrator configures three subnets from the `192.168.1.0/24` parent block:
 
@@ -58,22 +58,22 @@ An administrator configures three subnets from the `192.168.1.0/24` parent block
 
 Is there an address overlap between any of these subnets? If yes, identify which subnets conflict and explain why.
 
-👉 **[Jump to Solution 4](#-solution-for-question-4)**
+**[Jump to Solution 4](#-solution-for-question-4)**
 
 ---
 
-### 📝 Question 5: Modern Point-to-Point Links (`/31` vs `/30`)
+### Question 5: Modern Point-to-Point Links (`/31` vs `/30`)
 
 Per **RFC 3021**, modern routers can use `/31` masks on point-to-point links.
 
 1. What is the Subnet Mask of a `/31` in dotted-decimal?
 2. If two routers are connected via `10.0.0.0 /31`, what are the usable IP addresses for Router A and Router B?
 
-👉 **[Jump to Solution 5](#-solution-for-question-5)**
+**[Jump to Solution 5](#-solution-for-question-5)**
 
 ---
 
-### 📝 Question 6: Finding the Next Available VLSM Block
+### Question 6: Finding the Next Available VLSM Block
 
 An enterprise network has allocated the following subnets from `10.50.0.0 /16`:
 
@@ -82,11 +82,11 @@ An enterprise network has allocated the following subnets from `10.50.0.0 /16`:
 
 What is the **exact starting Network ID** for the next available `/24` subnet?
 
-👉 **[Jump to Solution 6](#-solution-for-question-6)**
+**[Jump to Solution 6](#-solution-for-question-6)**
 
 ---
 
-### 📝 Question 7: Subnetting Across Octet Boundaries (3rd Octet VLSM)
+### Question 7: Subnetting Across Octet Boundaries (3rd Octet VLSM)
 
 You are given **`172.20.0.0 /16`**. Allocate subnets for:
 
@@ -96,11 +96,11 @@ You are given **`172.20.0.0 /16`**. Allocate subnets for:
 
 Find the **Network ID** and **Subnet Mask** for each.
 
-👉 **[Jump to Solution 7](#-solution-for-question-7)**
+**[Jump to Solution 7](#-solution-for-question-7)**
 
 ---
 
-### 📝 Question 8: Calculating Unallocated Space
+### Question 8: Calculating Unallocated Space
 
 You are given a `/24` parent block (`192.168.5.0/24`). You allocate:
 
@@ -110,20 +110,20 @@ You are given a `/24` parent block (`192.168.5.0/24`). You allocate:
 
 How many **unused IP addresses** remain in the `192.168.5.0/24` parent block?
 
-👉 **[Jump to Solution 8](#-solution-for-question-8)**
+**[Jump to Solution 8](#-solution-for-question-8)**
 
 ---
 
-### 📝 Question 9: Validating Host Membership in VLSM
+### Question 9: Validating Host Membership in VLSM
 
 A host is configured with IP **`172.16.18.75`** and mask **`255.255.240.0`** (`/20`).
 Does another host with IP **`172.16.31.250 /20`** reside on the exact same subnet? Explain using block boundaries.
 
-👉 **[Jump to Solution 9](#-solution-for-question-9)**
+**[Jump to Solution 9](#-solution-for-question-9)**
 
 ---
 
-### 📝 Question 10: Multi-Site Enterprise Scenario
+### Question 10: Multi-Site Enterprise Scenario
 
 Company X has the core network **`10.100.0.0 /16`**.
 
@@ -133,11 +133,11 @@ Company X has the core network **`10.100.0.0 /16`**.
 
 Allocate the network blocks sequentially starting from `10.100.0.0` and list their **Broadcast Addresses**.
 
-👉 **[Jump to Solution 10](#-solution-for-question-10)**
+**[Jump to Solution 10](#-solution-for-question-10)**
 
 ---
 
-### 📝 Question 11: VLSM Route Summarization
+### Question 11: VLSM Route Summarization
 
 A router learns four contiguous VLSM subnets via OSPF:
 
@@ -148,11 +148,11 @@ A router learns four contiguous VLSM subnets via OSPF:
 
 What is the single **summary route (supernet)** with CIDR prefix that represents all four subnets?
 
-👉 **[Jump to Solution 11](#-solution-for-question-11)**
+**[Jump to Solution 11](#-solution-for-question-11)**
 
 ---
 
-### 📝 Question 12: Reverse VLSM Design (Troubleshooting)
+### Question 12: Reverse VLSM Design (Troubleshooting)
 
 A junior engineer assigned the following IPs to interfaces on a single router:
 
@@ -162,15 +162,15 @@ A junior engineer assigned the following IPs to interfaces on a single router:
 
 Is this interface addressing scheme valid, or is there an overlap?
 
-👉 **[Jump to Solution 12](#-solution-for-question-12)**
+**[Jump to Solution 12](#-solution-for-question-12)**
 
 ---
 
-## 🔍 Solutions & Detailed Explanations
+## Solutions & Detailed Explanations
 
 ---
 
-### 🔍 Solution for Question 1
+### Solution for Question 1
 
 #### Answer:
 
@@ -184,11 +184,11 @@ Is this interface addressing scheme valid, or is there an overlap?
 * **Department A (28 hosts):** $2^h - 2 \ge 28 \rightarrow 2^5 - 2 = 30 \text{ hosts}$. Needs 5 host bits $\rightarrow 32 - 5 = \mathbf{/27}$.
 * **Department C (12 hosts):** $2^h - 2 \ge 12 \rightarrow 2^4 - 2 = 14 \text{ hosts}$. Needs 4 host bits $\rightarrow 32 - 4 = \mathbf{/28}$.
 
-↩️ **[Back to Question 1](#-question-1-sorting--optimal-mask-selection)** | ➡️ **[Go to Question 2](#-question-2-simple-sequential-vlsm-allocation)**
+↩️ **[Back to Question 1](#question-1-sorting--optimal-mask-selection)** | ➡️ **[Go to Question 2](#question-2-simple-sequential-vlsm-allocation)**
 
 ---
 
-### 🔍 Solution for Question 2
+### Solution for Question 2
 
 #### Answer:
 
@@ -211,11 +211,11 @@ Is this interface addressing scheme valid, or is there an overlap?
 
 
 
-↩️ **[Back to Question 2](#-question-2-simple-sequential-vlsm-allocation)** | ➡️ **[Go to Question 3](https://www.google.com/search?q=%23question-3-incorporating-point-to-point-links-30)**
+↩️ **[Back to Question 2](#question-2-simple-sequential-vlsm-allocation)** | ➡️ **[Go to Question 3](#question-3-incorporating-point-to-point-links-30)**
 
 ---
 
-### 🔍 Solution for Question 3
+### Solution for Question 3
 
 #### Answer:
 
@@ -231,7 +231,7 @@ Is this interface addressing scheme valid, or is there an overlap?
 3. **WAN Link 1 (2 hosts):** Needs `/30` (Block Size = 4). Starts at `.96`. Network: `172.16.5.96 /30` (Broadcast: `.99`).
 4. **WAN Link 2 (2 hosts):** Needs `/30` (Block Size = 4). Starts at `.100`. Network: `172.16.5.100 /30` (Broadcast: `.103`).
 
-↩️ **[Back to Question 3](https://www.google.com/search?q=%23question-3-incorporating-point-to-point-links-30)** | ➡️ **[Go to Question 4](https://www.google.com/search?q=%23question-4-identifying-vlsm-overlap--conflicts)**
+↩️ **[Back to Question 3](#question-3-incorporating-point-to-point-links-30)** | ➡️ **[Go to Question 4](https://www.google.com/search?q=%23question-4-identifying-vlsm-overlap--conflicts)**
 
 ---
 
