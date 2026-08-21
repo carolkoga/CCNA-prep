@@ -231,11 +231,11 @@ Is this interface addressing scheme valid, or is there an overlap?
 3. **WAN Link 1 (2 hosts):** Needs `/30` (Block Size = 4). Starts at `.96`. Network: `172.16.5.96 /30` (Broadcast: `.99`).
 4. **WAN Link 2 (2 hosts):** Needs `/30` (Block Size = 4). Starts at `.100`. Network: `172.16.5.100 /30` (Broadcast: `.103`).
 
-↩️ **[Back to Question 3](#question-3-incorporating-point-to-point-links-30)** | ➡️ **[Go to Question 4](https://www.google.com/search?q=%23question-4-identifying-vlsm-overlap--conflicts)**
+↩️ **[Back to Question 3](#question-3-incorporating-point-to-point-links-30)** | ➡️ **[Go to Question 4](#question-4-identifying-vlsm-overlap--conflicts)**
 
 ---
 
-### 🔍 Solution for Question 4
+### Solution for Question 4
 
 #### Answer:
 
@@ -247,11 +247,11 @@ Is this interface addressing scheme valid, or is there an overlap?
 * **Subnet 2 (`192.168.1.96 /27`):** Range: `192.168.1.96` to `192.168.1.127`.
 * **Conflict:** Subnet 2 falls completely inside the IP range already claimed by Subnet 1 (`.0` to `.127`). Subnet 2 should have been started at `.128` or higher.
 
-↩️ **[Back to Question 4](https://www.google.com/search?q=%23question-4-identifying-vlsm-overlap--conflicts)** | ➡️ **[Go to Question 5](https://www.google.com/search?q=%23question-5-modern-point-to-point-links-31-vs-30)**
+↩️ **[Back to Question 4](#question-4-identifying-vlsm-overlap--conflicts)** | ➡️ **[Go to Question 5](#question-5-modern-point-to-point-links-31-vs-30)**
 
 ---
 
-### 🔍 Solution for Question 5
+### Solution for Question 5
 
 #### Answer:
 
@@ -266,11 +266,11 @@ Is this interface addressing scheme valid, or is there an overlap?
 
 2. RFC 3021 eliminates the standard rule subtracting Network ID and Broadcast for point-to-point links. Both addresses (`.0` and `.1`) become valid usable host IPs on the link!
 
-↩️ **[Back to Question 5](https://www.google.com/search?q=%23question-5-modern-point-to-point-links-31-vs-30)** | ➡️ **[Go to Question 6](https://www.google.com/search?q=%23question-6-finding-the-next-available-vlsm-block)**
+↩️ **[Back to Question 5](#question-5-modern-point-to-point-links-31-vs-30)** | ➡️ **[Go to Question 6](#question-6-finding-the-next-available-vlsm-block)**
 
 ---
 
-### 🔍 Solution for Question 6
+### Solution for Question 6
 
 #### Answer:
 
@@ -288,11 +288,11 @@ Is this interface addressing scheme valid, or is there an overlap?
 
 3. The next available starting Network ID for any mask is **`10.50.6.0`**.
 
-↩️ **[Back to Question 6](https://www.google.com/search?q=%23question-6-finding-the-next-available-vlsm-block)** | ➡️ **[Go to Question 7](https://www.google.com/search?q=%23question-7-subnetting-across-octet-boundaries-3rd-octet-vlsm)**
+↩️ **[Back to Question 6](#question-6-finding-the-next-available-vlsm-block)** | ➡️ **[Go to Question 7](#question-7-subnetting-across-octet-boundaries-3rd-octet-vlsm)**
 
 ---
 
-### 🔍 Solution for Question 7
+### Solution for Question 7
 
 #### Answer:
 
@@ -306,11 +306,11 @@ Is this interface addressing scheme valid, or is there an overlap?
 2. **Sales (450 hosts):** $2^9 - 2 = 510$ hosts $\rightarrow 9$ host bits $\rightarrow$ Prefix `/23`. Starts at `172.20.4.0`. 3rd Octet Block Size = 2. Range: `172.20.4.0` to `172.20.5.255`.
 3. **Management (200 hosts):** $2^8 - 2 = 254$ hosts $\rightarrow 8$ host bits $\rightarrow$ Prefix `/24`. Starts at `172.20.6.0`.
 
-↩️ **[Back to Question 7](https://www.google.com/search?q=%23question-7-subnetting-across-octet-boundaries-3rd-octet-vlsm)** | ➡️ **[Go to Question 8](https://www.google.com/search?q=%23question-8-calculating-unallocated-space)**
+↩️ **[Back to Question 7](#question-7-subnetting-across-octet-boundaries-3rd-octet-vlsm)** | ➡️ **[Go to Question 8](#question-8-calculating-unallocated-space)**
 
 ---
 
-### 🔍 Solution for Question 8
+### Solution for Question 8
 
 #### Answer:
 
@@ -325,11 +325,11 @@ Is this interface addressing scheme valid, or is there an overlap?
 * **Total Used IPs:** $128 + 64 + 32 = 224 \text{ IPs}$.
 * **Unallocated IPs:** $256 - 224 = \mathbf{32 \text{ IPs}}$ (which form one free `/27` block!).
 
-↩️ **[Back to Question 8](https://www.google.com/search?q=%23question-8-calculating-unallocated-space)** | ➡️ **[Go to Question 9](https://www.google.com/search?q=%23question-9-validating-host-membership-in-vlsm)**
+↩️ **[Back to Question 8](#question-8-calculating-unallocated-space)** | ➡️ **[Go to Question 9](#question-9-validating-host-membership-in-vlsm)**
 
 ---
 
-### 🔍 Solution for Question 9
+### Solution for Question 9
 
 #### Answer:
 
@@ -345,11 +345,11 @@ Is this interface addressing scheme valid, or is there an overlap?
 
 3. Both `172.16.18.75` and `172.16.31.250` fall between `172.16.16.0` and `172.16.31.255`.
 
-↩️ **[Back to Question 9](https://www.google.com/search?q=%23question-9-validating-host-membership-in-vlsm)** | ➡️ **[Go to Question 10](https://www.google.com/search?q=%23question-10-multi-site-enterprise-scenario)**
+↩️ **[Back to Question 9](#question-9-validating-host-membership-in-vlsm)** | ➡️ **[Go to Question 10](#question-10-multi-site-enterprise-scenario)**
 
 ---
 
-### 🔍 Solution for Question 10
+### Solution for Question 10
 
 #### Answer:
 
@@ -363,11 +363,11 @@ Is this interface addressing scheme valid, or is there an overlap?
 2. **Site B (500 hosts):** Requires $2^9 - 2 = 510$ hosts $\rightarrow$ Prefix **/23** (3rd Octet Block Size = 2). Starts at `10.100.8.0`. Range: `10.100.8.0` to `10.100.9.255`.
 3. **Site C (250 hosts):** Requires $2^8 - 2 = 254$ hosts $\rightarrow$ Prefix **/24** (3rd Octet Block Size = 1). Starts at `10.100.10.0`. Range: `10.100.10.0` to `10.100.10.255`.
 
-↩️ **[Back to Question 10](https://www.google.com/search?q=%23question-10-multi-site-enterprise-scenario)** | ➡️ **[Go to Question 11](https://www.google.com/search?q=%23question-11-vlsm-route-summarization)**
+↩️ **[Back to Question 10](#question-10-multi-site-enterprise-scenario)** | ➡️ **[Go to Question 11](#question-11-vlsm-route-summarization)**
 
 ---
 
-### 🔍 Solution for Question 11
+### Solution for Question 11
 
 #### Answer:
 
@@ -387,11 +387,11 @@ The first 6 bits of the 3rd octet (`000100`) are identical across all four route
 * Matching bits: $8 \text{ (1st octet)} + 8 \text{ (2nd octet)} + 6 \text{ (3rd octet)} = \mathbf{22 \text{ bits}}$.
 * **Summary Route:** `192.168.16.0 /22`.
 
-↩️ **[Back to Question 11](https://www.google.com/search?q=%23question-11-vlsm-route-summarization)** | ➡️ **[Go to Question 12](https://www.google.com/search?q=%23question-12-reverse-vlsm-design-troubleshooting)**
+↩️ **[Back to Question 11](#question-11-vlsm-route-summarization)** | ➡️ **[Go to Question 12](#question-12-reverse-vlsm-design-troubleshooting)**
 
 ---
 
-### 🔍 Solution for Question 12
+### Solution for Question 12
 
 #### Answer:
 
@@ -405,6 +405,6 @@ The first 6 bits of the 3rd octet (`000100`) are identical across all four route
 
 All three subnets sit neatly side-by-side without a single overlapping bit!
 
-↩️ **[Back to Question 12](https://www.google.com/search?q=%23question-12-reverse-vlsm-design-troubleshooting)**
+↩️ **[Back to Question 12](#question-12-reverse-vlsm-design-troubleshooting)**
 
 ---
