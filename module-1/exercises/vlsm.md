@@ -15,7 +15,7 @@ You are allocated the block **`192.168.10.0 /24`**. You need to design subnets f
 1. In what order must these subnets be allocated?
 2. What CIDR prefix (`/XX`) should be assigned to each department to minimize address waste?
 
-**[Jump to Solution 1](#-solution-for-question-1)**
+**[Jump to Solution 1](#solution-for-question-1)**
 
 ---
 
@@ -29,7 +29,7 @@ Using the base network **`10.1.1.0 /24`**, allocate subnets sequentially for the
 
 Find the **Network ID**, **Usable Host Range**, and **Broadcast Address** for each LAN.
 
-**[Jump to Solution 2](#-solution-for-question-2)**
+**[Jump to Solution 2](#solution-for-question-2)**
 
 ---
 
@@ -44,7 +44,7 @@ A branch office receives the block **`172.16.5.0 /24`**. Design subnets for:
 
 Provide the **Network ID** and **Prefix Length** for all 4 allocations.
 
-**[Jump to Solution 3](#-solution-for-question-3)**
+**[Jump to Solution 3](#solution-for-question-3)**
 
 ---
 
@@ -58,7 +58,7 @@ An administrator configures three subnets from the `192.168.1.0/24` parent block
 
 Is there an address overlap between any of these subnets? If yes, identify which subnets conflict and explain why.
 
-**[Jump to Solution 4](#-solution-for-question-4)**
+**[Jump to Solution 4](#solution-for-question-4)**
 
 ---
 
@@ -69,7 +69,7 @@ Per **RFC 3021**, modern routers can use `/31` masks on point-to-point links.
 1. What is the Subnet Mask of a `/31` in dotted-decimal?
 2. If two routers are connected via `10.0.0.0 /31`, what are the usable IP addresses for Router A and Router B?
 
-**[Jump to Solution 5](#-solution-for-question-5)**
+**[Jump to Solution 5](#solution-for-question-5)**
 
 ---
 
@@ -82,7 +82,7 @@ An enterprise network has allocated the following subnets from `10.50.0.0 /16`:
 
 What is the **exact starting Network ID** for the next available `/24` subnet?
 
-**[Jump to Solution 6](#-solution-for-question-6)**
+**[Jump to Solution 6](#solution-for-question-6)**
 
 ---
 
@@ -96,7 +96,7 @@ You are given **`172.20.0.0 /16`**. Allocate subnets for:
 
 Find the **Network ID** and **Subnet Mask** for each.
 
-**[Jump to Solution 7](#-solution-for-question-7)**
+**[Jump to Solution 7](#solution-for-question-7)**
 
 ---
 
@@ -110,7 +110,7 @@ You are given a `/24` parent block (`192.168.5.0/24`). You allocate:
 
 How many **unused IP addresses** remain in the `192.168.5.0/24` parent block?
 
-**[Jump to Solution 8](#-solution-for-question-8)**
+**[Jump to Solution 8](#solution-for-question-8)**
 
 ---
 
@@ -119,7 +119,7 @@ How many **unused IP addresses** remain in the `192.168.5.0/24` parent block?
 A host is configured with IP **`172.16.18.75`** and mask **`255.255.240.0`** (`/20`).
 Does another host with IP **`172.16.31.250 /20`** reside on the exact same subnet? Explain using block boundaries.
 
-**[Jump to Solution 9](#-solution-for-question-9)**
+**[Jump to Solution 9](#solution-for-question-9)**
 
 ---
 
@@ -133,7 +133,7 @@ Company X has the core network **`10.100.0.0 /16`**.
 
 Allocate the network blocks sequentially starting from `10.100.0.0` and list their **Broadcast Addresses**.
 
-**[Jump to Solution 10](#-solution-for-question-10)**
+**[Jump to Solution 10](#solution-for-question-10)**
 
 ---
 
@@ -148,7 +148,7 @@ A router learns four contiguous VLSM subnets via OSPF:
 
 What is the single **summary route (supernet)** with CIDR prefix that represents all four subnets?
 
-**[Jump to Solution 11](#-solution-for-question-11)**
+**[Jump to Solution 11](#solution-for-question-11)**
 
 ---
 
@@ -162,7 +162,7 @@ A junior engineer assigned the following IPs to interfaces on a single router:
 
 Is this interface addressing scheme valid, or is there an overlap?
 
-**[Jump to Solution 12](#-solution-for-question-12)**
+**[Jump to Solution 12](#solution-for-question-12)**
 
 ---
 
