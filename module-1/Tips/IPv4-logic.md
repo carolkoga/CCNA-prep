@@ -90,5 +90,3 @@ Take `172.16.0.0` to `172.31.255.255` (Class B Private):
 Understanding *why* protocols work this way makes studying for the CCNA much easier than trying to memorize raw numbers.
 
 #CCNA #Cisco #Networking #Cybersecurity #LearningInPublic #Subnetting #IPv4 #TechCommunity
-
-
